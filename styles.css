@@ -467,6 +467,10 @@ section {
         padding: 1.5rem;
     }
 
+    .rate-card {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
 }
 /* Thêm vào file styles.css */
 
