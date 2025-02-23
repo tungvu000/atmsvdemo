@@ -1,247 +1,723 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATM Sinh Viên - Giải Pháp Tài Chính Cho Sinh Viên</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="nav-group">
-                <a href="#hero" class="logo">ATMSinhVien</a>
-                <div class="nav-links">
-                    <a href="#hero" class="nav-item">Trang Chủ</a>
-                    <a href="#video" class="nav-item">Giới Thiệu</a>
-                    <a href="#services" class="nav-item">Dịch Vụ</a>
-                    <a href="#features" class="nav-item">Tính Năng</a>
-                    <a href="#conditions" class="nav-item">Điều Kiện</a>
-                    <a href="#rate" class="nav-item">Đánh Giá</a>
-                    <a href="#contact" class="nav-item">Liên Hệ</a>
-                </div>
-            </div>
-            <button class="register-btn">Đăng Ký Vay</button>
-            <button class="mobile-menu-btn" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+<html lang="en">
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <a href="#hero" class="mobile-nav-item">Trang Chủ</a>
-        <a href="#video" class="mobile-nav-item">Giới Thiệu</a>
-        <a href="#services" class="mobile-nav-item">Dịch Vụ</a>
-        <a href="#features" class="mobile-nav-item">Tính Năng</a>
-        <a href="#conditions" class="mobile-nav-item">Điều Kiện</a>
-        <a href="#rate" class="mobile-nav-item">Đánh Giá</a>
-        <a href="#contact" class="mobile-nav-item">Liên Hệ</a>
-        <button class="register-btn">Đăng Ký Vay</button>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ATM Sinh Viên</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: ATMSINHVIEN
+  * Template URL: https://bootstrapmade.com/ATMSINHVIEN-bootstrap-landing-page-template/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">ATMSINHVIEN</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Trang Chủ</a></li>
+          <li><a href="#about">Giới Thiệu</a></li>
+          <li><a href="#features">Dịch Vụ</a></li>
+          <li><a href="#services">Tính Năng</a></li>
+          <li><a href="#pricing">Điều Kiện</a></li>
+          <li><a href="#contact">Đánh Giá</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#contact">Đăng Ký Vay Ngay</a>
+
     </div>
+  </header>
+
+  <main class="main">
 
     <!-- Hero Section -->
-    <div class="parallax-bg"></div>
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Giải Pháp Tài Chính Thông Minh Cho Sinh Viên</h1>
-            <p>Vay nhanh chóng - Lãi suất ưu đãi - Thủ tục đơn giản</p>
-            <a href="#" class="btn">Đăng Ký Ngay</a>
-        </div>
-    </section>
-    <div class="parallax-bg"></div>
-    <!-- Video Section -->
-    <section id="video" class="video-section">
-        <h2 class="section-title">Giới Thiệu Về ATM Sinh Viên</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/PPvNd1B8drk" 
-                    title="ATM Sinh Viên Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-        </div>
-    </section>
-    <div class="parallax-bg"></div>
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2 class="section-title">Dịch Vụ Của Chúng Tôi</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Vay Tiêu Dùng Cá Nhân</h3>
-                <p>Dành riêng cho sinh viên đang theo học tại các trường Đại học ở Hà Nội. 
-                   Thủ tục đơn giản, lãi suất ưu đãi, giải ngân nhanh chóng.</p>
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="company-badge mb-4">
+                <i class="bi bi-gear-fill me-2"></i>
+                Working for your success
+              </div>
+
+              <h1 class="mb-4">
+                Công Ty Tài Chính Dành Riêng Cho Sinh Viên <br>
+                ATM
+                <span class="accent-text">Sinh Viên</span>
+              </h1>
+
+              <p class="mb-4 mb-md-5">
+                Chắp cách giấc mơ cho mọi sinh viên
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary me-0 me-sm-2 mx-1">Vay Ngay</a>
+                <a href="https://www.youtube.com/watch?v=PPvNd1B8drk" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                  <i class="bi bi-play-circle me-1"></i>
+                  Play Video
+                </a>
+              </div>
             </div>
-            <div class="service-card">
-                <h3>Khởi Nghiệp Cùng Sinh Viên</h3>
-                <p>Hỗ trợ vốn cho các ý tưởng kinh doanh tiềm năng. 
-                   Đồng hành cùng bạn biến ý tưởng startup thành hiện thực.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid">
+
+              <div class="customers-badge">
+                <div class="customer-avatars">
+                  <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
+                  <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
+                  <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
+                  <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
+                  <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
+                  <span class="avatar more">99+</span>
+                </div>
+                <p class="mb-0 mt-2">Hàng trăm sinh viên đã tin tưởng và sử dụng dịch vụ</p>
+              </div>
             </div>
-            <div class="service-card">
-                <h3>Thẻ Thành Viên</h3>
-                <p>Đặc quyền dành cho khách hàng thân thiết với nhiều ưu đãi về lãi suất, 
-                   thủ tục giải ngân và các quyền lợi độc quyền khác.</p>
-            </div>
+          </div>
         </div>
-    </section>
-    <div class="parallax-bg"></div>
+
+        <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-trophy"></i>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-briefcase"></i>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-award"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">VỀ CHÚNG TÔI</span>
+            <h2 class="about-title">Công Ty Tài Chính Dành Riêng Cho Sinh Viên</h2>
+            <p class="about-description">Sinh viên tại Hà Nội, các bạn đã biết đến ATM Sinh Viên chưa? Đây là giải pháp vay tiền tiện lợi, nhanh chóng và hoàn toàn phù hợp với nhu cầu của các bạn. Ra mắt vào tháng 3/2023, công ty của chúng tôi mang đến các dịch hỗ trợ tài chính dành riêng cho sinh viên tại Hà Nội. Với tiêu chí đem lại cho các bạn sự thoải mái, linh hoạt chúng tôi cung cáp nhiều loại hình hỗ trợ: vay tiền, trả góp, vay ic, cầm đồ,... Tại đây mọi khoản phí và lãi suất đều được công khai, minh bạch, không thẩm định người thân, không cần bảo lãnh.</p>
+
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Vay không giới hạn</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Không phí - Không khấu trừ</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Gói vay-trả linh hoạt</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Điều kiện đơn giản</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Không cần bảo lãnh</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Nhận tiền sau 5p gặp mặt</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="info-wrapper">
+              <div class="row gy-4">
+                <div class="col-lg-5">
+                  <div class="profile d-flex align-items-center gap-3">
+                    <img src="https://atmsinhvien.vn/wp-content/uploads/2022/05/logoft.png" alt="CEO Profile" class="profile-image">
+                    <div>
+                      <h4 class="profile-name">ATM Sinh Viên</h4>
+                      <p class="profile-position">Chuyên hỗ trợ tài chính sv</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="contact-info d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                      <p class="contact-label">Liên hệ ngay</p>
+                      <p class="contact-number">0777.23.32.23</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="assets/img/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="assets/img/about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div>
+              <div class="experience-badge floating">
+                <h3>3+ <span>Years</span></h3>
+                <p>Hoạt động dịch vụ hỗ trợ sinh viên</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
     <!-- Features Section -->
-    <section id="features" class="features">
-        <h2 class="section-title">Tính Năng Nổi Bật</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>Lãi Suất Thấp</h3>
-                <p>Chỉ từ 0.5%/tháng dành riêng cho sinh viên</p>
-            </div>
-            <div class="feature-card">
-                <h3>Giải Ngân Nhanh</h3>
-                <p>Nhận tiền chỉ sau 24h kể từ khi được duyệt</p>
-            </div>
-            <div class="feature-card">
-                <h3>Hồ Sơ Đơn Giản</h3>
-                <p>Chỉ cần CMND và thẻ sinh viên</p>
-            </div>
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Dịch Vụ</h2>
+        <p>Những dịch vụ phổ biến của chúng tôi</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="d-flex justify-content-center">
+
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                <h4>Vay tiền - Trả góp</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                <h4>Vay Icloud</h4>
+              </a><!-- End tab nav item -->
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                <h4>Cầm đồ</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+          </ul>
+
         </div>
-    </section>
-    <div class="parallax-bg"></div>
-    <!-- Conditions Section -->
-    <section id="conditions" class="conditions">
-        <h2 class="section-title">Điều Kiện Vay & Cam Kết</h2>
-        <div class="conditions-list">
-            <div class="condition-item">Là sinh viên đang theo học tại các trường Đại học ở Hà Nội</div>
-            <div class="condition-item">Độ tuổi từ 18 đến 25</div>
-            <div class="condition-item">Có thẻ sinh viên và giấy tờ tùy thân hợp lệ</div>
-            <div class="condition-item">Có hộ khẩu thường trú tại Việt Nam</div>
-            <div class="condition-item">Cam kết bảo mật thông tin khách hàng</div>
-            <div class="condition-item">Lãi suất minh bạch, không phát sinh phí ẩn</div>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Dịch Vụ Vay Tiền Trả Góp</h3>
+                <p class="fst-italic">
+                  Nếu bạn đang học tại Hà Nội và cần một khoản vay gấp, ATM Sinh Viên chính là lựa chọn lý tưởng!
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Vay bao nhiêu cầm về bấy nhiêu – Không trừ phí, bạn nhận đủ số tiền vay.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Không giới hạn tài khoản vay – Gói vay đa dạng, giúp bạn lựa chọn theo nhu cầu.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Không có phí – Không phải lo về các khoản phí ẩn, bạn chỉ nhận và trả đúng số tiền vay.<span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-1.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Dịch Vụ Vay Tiền Bằng Icloud</h3>
+                <p class="fst-italic">
+                  Chúng tôi luôn sẵn sàng hỗ trợ các bạn sinh viên tại Hà Nội với những dịch vụ tài chính đơn giản và hiệu quả!
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Chỉ cần sử dụng iphone và số tiền bạn có thể vay sẽ dựa trên dòng máy bạn dùng.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Cam kết không khóa máy hay để lộ thông tin khi bạn trả đủ tiền.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Không có phụ phí, cam kết nhận đủ số tiền.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-2.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Dịch vụ cầm đồ</h3>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Hỗ trợ tài chính, không lo áp lực – Cầm đồ không lãi suất!</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Dịch vụ dành riêng cho những bạn đang có khoản vay bên chúng tôi.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Khi bạn đang có một khoản vay và khi cầm đồ bên chúng tôi thì sẽ được hưởng ưu đãi cầm đồ không lãi suất.</span></li>
+                </ul>
+                <p class="fst-italic">
+                  Đây là dịch vụ ưu đãi chỉ có ở ATM Sinh Viên, dành cho những bạn đang duy trì khoản vay bên chúng tôi.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-3.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
         </div>
-    </section>
-    <div class="parallax-bg"></div>
-    <!-- Membership Section -->
-    <section id="rate" class="rate" >
-        <h2 class="section-title">KHÁCH HÀNG NÓI VỀ ATM SINH VIÊN</h2>
-        
-        <div class="rate-slider">
-            <div class="rate-track">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-image">
-                            <img src="https://atmsinhvien.vn/wp-content/uploads/2022/05/kh1.png" alt="Testimonial">
-                        </div>
-                        <div class="testimonial-text">
-                            <h4>Thanh Loan - Sinh viên ĐH Ngoại Thương</h4>
-                            <p>Năm cuối Đại Học, gia đình mình xảy ra biến cố rất khó khăn về tài chính, rất may mắn mình được biến tới AtmSinhvien.vn và được quý công ty hỗ trợ kịp thời để vượt qua giai đoạn khó khắn đó cho đến khi tốt nghiệp. Rất cảm ơn quý công ty đã hỗ trợ mình kịp thời và rất nhiệt tình.</p>
-                        </div>
-                    </div>
-                </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1532" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Khách hàng</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="621" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Đang vay</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="2680" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Giờ tiếp khách</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="158" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Đang xử lý</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Ưu điểm dịch vụ</h2>
+        <p>Những ưu điểm về dịch vụ chỉ có tại ATM Sinh Viên</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-activity"></i>
+              </div>
+              <div>
+                <h3>Lãi suất cố định</h3>
+                <p>Chúng tôi công khai lãi suất và số tiền phải trả khi bạn vay tiền. Không phí ẩn, phụ phí</p>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div>
+                <h3>Giảm lãi, nhận hoa hồng</h3>
+                <p>Khi bạn mời bạn bè, người quen sử dụng dịch vụ bên chúng tôi sẽ được hưởng hoa hồng hoặc giảm lãi suất và 1 số đặc quyền khác.</p>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-easel"></i>
+              </div>
+              <div>
+                <h3>Giải ngân nhanh chóng</h3>
+                <p>Chỉ cần làm hồ sơ và nhận tiền ngay sau 5p gặp mặt.</p>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <div>
+                <h3>Hồ sơ - Thủ tục đơn giản</h3>
+                <p>Chỉ cần CCCD và Thẻ sinh viên là bạn có thể vay tiền.</p>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Điều kiện vay</h2>
+        <p>Những điều kiện cần có khi vay tiền</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 justify-content-center">
+
+
+          <!-- Standard Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card popular">
+              <div class="popular-badge">Most Popular</div>
+              <h3>Bắt buộc</h3>
+
+              <p class="description">Điều kiện bắt buộc phải có để làm thủ tục vay tiền.</p>
+
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Là sinh viên đang theo học tại các trường Đại học ở Hà Nội
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Độ tuổi từ 18 đến 25
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Có thẻ sinh viên và giấy tờ tùy thân hợp lệ
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Có hộ khẩu thường trú tại Việt Nam
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-card">
+              <h3>Cam kết</h3>
+
+              <p class="description">Những cam kết chúng tôi đưa ra cho bạn.</p>
+
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Cam kết bảo mật thông tin khách hàng
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Không chia sẻ thông tin với bên thứ ba khi chưa có sự đồng ý.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Lãi suất minh bạch, không phát sinh phí ẩn
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Đảm bảo tài sản cầm cố được niêm phong và bảo quản cẩn thận.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Tư vấn tận tình, giúp khách hàng chọn gói vay phù hợp.
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section light-background">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Đánh giá</h2>
+            <p>Một số đánh giá của khách hàng đã sử dụng dịch vụ</p>
+          </div><!-- End Section Title -->
     
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-image">
-                            <img src="https://atmsinhvien.vn/wp-content/uploads/2022/05/kh2.png" alt="Testimonial">
-                        </div>
-                        <div class="testimonial-text">
-                            <h4>Thuý Nga - Sinh viên ĐH Thương Mại</h4>
-                            <p>Ngay từ năm nhất lên Hà Nội học, mình thực sự rất bỡ ngỡ khố khăn về tài chính. Cũng may kể từ khi biết và đăng ký vay tại ATM Sinh Viên, mình không những được hỗ trợ một mức tài chính kịp thời, mà còn được quý công ty giúp đỡ cả thuê phòng trọ cũng như phương tiện đi lại...</p>
-                        </div>
-                    </div>
+          <div class="container">
+    
+            <div class="row g-5">
+    
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-item">
+                  <img src="https://atmsinhvien.vn/wp-content/uploads/2022/05/kh2.png" class="testimonial-img" alt="">
+                  <h3>Thanh Loan</h3>
+                  <h4>Sinh viên ĐH Ngoại Thương</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Năm cuối Đại Học, gia đình mình xảy ra biến cố rất khó khăn về tài chính, rất may mắn mình được biến tới AtmSinhvien.vn và được quý công ty hỗ trợ kịp thời để vượt qua giai đoạn khó khắn đó cho đến khi tốt nghiệp. Rất cảm ơn quý công ty đã hỗ trợ mình kịp thời và rất nhiệt tình.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
                 </div>
+              </div><!-- End testimonial item -->
+    
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-item">
+                  <img src="https://atmsinhvien.vn/wp-content/uploads/2022/05/kh1.png" class="testimonial-img" alt="">
+                  <h3>Thuý Nga</h3>
+                  <h4>Sinh viên ĐH Thương Mại</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Ngay từ năm nhất lên Hà Nội học, mình thực sự rất bỡ ngỡ khố khăn về tài chính. Cũng may kể từ khi biết và đăng ký vay tại ATM Sinh Viên, mình không những được hỗ trợ một mức tài chính kịp thời, mà còn được quý công ty giúp đỡ cả thuê phòng trọ cũng như phương tiện đi lại...</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+    
+
             </div>
     
-            <!-- Navigation Buttons -->
-            <button class="slider-nav prev" aria-label="Previous">&#10094;</button>
-            <button class="slider-nav next" aria-label="Next">&#10095;</button>
-        </div>
-    </section>
-    <div class="parallax-bg"></div>
+          </div>
+    
+        </section><!-- /Testimonials Section -->
+    
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
-        <div class="contact-info">
-            <p>Hotline: 1900 xxxx</p>
-            <p>Email: contact@atmsinhvien.vn</p>
-        </div>
-    </section>
+    <section id="contact" class="contact section light-background">
 
-    <!-- Floating Calculator -->
-    <div class="floating-calculator">
-        <h3>Tính Khoản Vay</h3>
-        <form class="calculator-form">
-            <input type="number" placeholder="Số tiền cần vay (VNĐ)" required>
-            <input type="number" placeholder="Thời hạn (tháng)" required>
-            <button type="submit">Tính Toán</button>
-        </form>
-    </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Liên hệ</h2>
+      </div><!-- End Section Title -->
 
-    <!-- Modal -->
-    <!-- Cập nhật phần modal trong file index.html -->
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal" id="registrationModal">
-            <div class="modal-header">
-                <h2>Đăng Ký Vay</h2>
-                <button class="modal-close" id="modalClose">&times;</button>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Thông tin liên hệ</h3>
+              <p>Hãy liên hệ ngay để được tư vấn 24/7</p>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Địa Chỉ</h4>
+                  <p>Sảnh GS2</p>
+                  <p>Vinhome Smart City Tây Mỗ</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Số hotline</h4>
+                  <p>0888.03.30.17</p>
+                  <p>0777.23.32.23</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>amtsinhvien@gmail.com</p>
+                </div>
+              </div>
             </div>
-            <form class="registration-form" id="registrationForm">
-                <div class="form-steps">
-                    <div class="step active">1</div>
-                    <div class="step">2</div>
-                    <div class="step">3</div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="fullName">Họ và tên</label>
-                    <input 
-                        type="text" 
-                        id="fullName" 
-                        placeholder="Nhập họ và tên của bạn"
-                        required
-                    >
-                </div>
-                
-                <div class="form-group">
-                    <label for="age">Tuổi</label>
-                    <input 
-                        type="number" 
-                        id="age" 
-                        placeholder="Nhập tuổi của bạn"
-                        min="18" 
-                        max="25"
-                        required
-                    >
-                </div>
-                
-                <div class="form-group">
-                    <label for="university">Trường đại học</label>
-                    <input 
-                        type="text" 
-                        id="university" 
-                        placeholder="Nhập tên trường đại học"
-                        required
-                    >
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Số điện thoại</label>
-                    <input 
-                        type="tel" 
-                        id="phone" 
-                        placeholder="Nhập số điện thoại của bạn"
-                        required
-                    >
-                </div>
+          </div>
 
-                <button type="submit" class="submit-btn">Gửi đăng ký</button>
-                
-                <div class="success-message" id="successMessage">
-                    Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn sớm.
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Đăng Ký Ngay</h3>
+              <p>Đăng ký ngay để nhận được nhiều ưu đãi và đặc quyền hấp dẫn ngay hôm nay.</p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Họ Và Tên" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="ages" class="form-control" placeholder="Tuổi" required="">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" name="phone" placeholder="Số Điện Thoại" required="">
+                  </div>
+                  <div class="col-md-12 ">
+                    <input type="email" class="form-control" name="email" placeholder="Địa Chỉ Email" required="">
+                  </div>
+                  <div class="col-md-12 ">
+                    <input type="email" class="form-control" name="schoolss" placeholder="Trường Đại Học Đang Theo Học" required="">
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Đơn đăng ký của bạn đã được gửi. Cảm ơn bạn đã sử dụng dịch vụ!</div>
+
+                    <button type="submit" class="btn">Đăng ký ngay</button>
+                  </div>
+
                 </div>
-            </form>
+              </form>
+
+            </div>
+          </div>
+
         </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">ATM Sinh Viên</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Sảnh GS2</p>
+            <p>Vinhome Smart City Tây Mỗ</p>
+            <p class="mt-3"><strong>Hotline:</strong> <span>0777.23.32.23</span></p>
+            <p><strong>Email:</strong> <span>amtsinhvien@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="container copyright text-center mt-4">
+      <div class="credits">
+
+        Designed by <a href="https://www.facebook.com/Tungvuvabfunnn/">TungVu</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
